@@ -1,6 +1,63 @@
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;*/
 
+:root {
+  --primary-color: #d1cebd;
+  --secondary-color: #f6eedf;
+}
+
 h1 {
   font-family: "roboto", serif;
+  font-size: 96px;
+}
+
+.hero {
+  background: #d1cebd;
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.hero h2 {
+  font-family: "poppins", sans-serif;
+  font-weight: normal;
+  line-height: 2;
+  font-size: 24px;
+}
+
+/* Button-main page */
+#contact-button {
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 15px 22px !important;
+  font-size: 9px;
+  color: black;
+  border-radius: 2px !important;
+  background: var(--primary-color);
+  transition: all 150ms ease-in-out;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-button:hover {
+  transform: scale(1.1) !important;
+  border-radius: 2px !important;
+  border: none;
+  background-color: white;
+  color: black;
+}
+
+.btn-branding {
+  font-size: 8px !important;
+  letter-spacing: 2px;
+  padding: 15px 22px !important;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 0% !important;
+  border: solid 1px;
+  transition: all 150ms ease-in-out;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#btn-branding:hover {
+  color: black;
+  background: var(--secondary-color);
 }
