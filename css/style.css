@@ -8,13 +8,25 @@ font-family: 'Roboto', sans-serif;*/
 
 h1 {
   font-family: "roboto", serif;
-  font-size: 96px;
+  font-size: 75px;
+}
+
+/* Index-page */
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .hero {
-  background: #d1cebd;
-  text-align: center;
-  padding: 160px 20px;
+  background-color: aqua;
+  background-image: url(/images/Background-1.2.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px;
+  padding-bottom: 300px;
 }
 
 .hero h2 {
@@ -22,6 +34,13 @@ h1 {
   font-weight: normal;
   line-height: 2;
   font-size: 24px;
+}
+
+#developer-name {
+  padding-top: 100px;
+  display: block;
+  font-size: 3em;
+  font-weight: 500;
 }
 
 /* Button-main page */
@@ -60,4 +79,59 @@ h1 {
 #btn-branding:hover {
   color: black;
   background: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+  background: var(--secondary-color);
+  margin: 0px auto;
+}
+
+footer p a {
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  color: black;
+  opacity: 0.7;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: all 150ms ease-in-out;
+}
+
+footer p a:hover {
+  transform: scale(1.2);
+  color: black;
+}
+
+footer .social-links a {
+  margin: 0 5px;
+  color: var(--primary-color);
+  padding: 10px 15px;
+  border-radius: 60px;
+  font-size: 19px;
+  transition: all 150ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+  .hero h1,
+  h2 {
+    font-size: 45px;
+  }
+
+  .hero {
+    padding: 80px, 20px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  #contact-button {
+    font-size: 8px;
+  }
 }
