@@ -2,44 +2,75 @@
 font-family: 'Roboto', sans-serif;*/
 
 :root {
-  --primary-color: #d1cebd;
+  --primary-color: #bab4b5;
   --secondary-color: #f6eedf;
+}
+
+* {
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Index-page */
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  opacity: 0.8;
+  font-family: "poppins", sans-serif;
+  font-weight: 300;
+}
+
+/*Navigation Bar*/
+.navbar {
+  background: var(--primary-color);
+  padding: 20px 0;
+}
+
+.navbar-nav {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+
+  padding-top: 100px;
+  display: block;
+}
+
+.hero {
+  background-color: white;
+  background-image: url(/images/Test-1.png);
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  color: black;
+  position: relative;
+
+  padding-bottom: 300px;
 }
 
 h1 {
   font-family: "roboto", serif;
-  font-size: 75px;
-}
-
-/* Index-page */
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.hero {
-  background-color: aqua;
-  background-image: url(/images/Background-1.2.png);
-  background-size: cover;
-  background-position: center;
-  padding-top: 200px;
-  padding-bottom: 300px;
-}
-
-.hero h2 {
-  font-family: "poppins", sans-serif;
-  font-weight: normal;
-  line-height: 2;
-  font-size: 24px;
+  font-size: 2.5em;
+  font-weight: 500;
 }
 
 #developer-name {
   padding-top: 100px;
   display: block;
-  font-size: 3em;
+  font-size: 2.7em;
   font-weight: 500;
 }
 
@@ -116,22 +147,10 @@ footer .social-links a:hover {
   transform: scale(1.1);
 }
 
+section {
+  font-size: 10px;
+}
+
 /* Media Queries */
-@media (max-width: 960px) {
-  .hero h1,
-  h2 {
-    font-size: 45px;
-  }
-
-  .hero {
-    padding: 80px, 20px;
-  }
-
-  p {
-    font-size: 10px;
-  }
-
-  #contact-button {
-    font-size: 8px;
-  }
+@media only screen and (max-width: 768px) {
 }
